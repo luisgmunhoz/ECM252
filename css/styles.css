@@ -1,0 +1,86 @@
+/* seletor por id */
+#title {
+  color: lightcyan;
+  text-align: center;
+}
+
+/*seletor por tipo e id */
+p#description {
+  color: blue;
+}
+
+/*seletor por classe */
+p.promocao {
+  text-align: center;
+  background-color: lightgreen;
+}
+
+h1.promocao {
+  color: yellow;
+}
+
+.nova {
+  color: white;
+}
+
+p.final-pagina#rodape {
+  background-color: lightgray;
+  text-align: center;
+}
+
+.curso {
+  background-color: aliceblue;
+}
+
+.novo-curso {
+  background-color: aliceblue;
+  color: red;
+}
+
+.page-header {
+  background-color: blueviolet;
+  margin-top: 0;
+  margin-bottom: 40px;
+  padding: 20px 20px 20px 40px;
+}
+
+.page-header h1,
+.page-header h1 a,
+.page-header h1 a:visited,
+.page-header h1 a:active {
+  color: #ffffff;
+  font-size: 36pt;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: "Lobster", cursive;
+}
+
+div.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+    background-color: blue;
+  }
+}
