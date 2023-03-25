@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/cascata_especificidade.css">
-    <title>Cascata e especificidade</title>
-    <style>
-        #titulo {
-            color: blue;
-        }
-        .descricao {
-            color: green;
-        }
-        p {
-            color: red;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Efeito cascata e especificidade</title>
+  <link rel="stylesheet" href="cascata_especificidade.css">
+  <style>
+    main, article{
+      border: 1px solid black;
+      padding: 12px;
+    }
+  </style>
 </head>
-
 <body>
-    <main>
-        <article>
-            <p id="titulo" class="descricao">
-                Algoritmo de especificidade do CSS
-            </p>
-        </article>
-    </main>
-</body>
+  <!-- article>p#titulo.descricao{Algoritmo de especificidade CSS} -->
+  <main>
+    <article>
+      <p id="titulo" class="descricao">
+        Algoritmo de especificidade CSS
+      </p>
+    </article>
+  </main>
 
+</body>
 </html>
